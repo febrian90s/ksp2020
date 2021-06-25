@@ -107,9 +107,12 @@
 
 </head>
 <body>
+<?php
+include 'header.php';
+?>
 
 <div class="container">
-    <h1 class="text"> Koperasi Simpan Pinjam</h1>
+    <h3 class="text mt-3"> Keanggotan Koperasi Simpan Pinjam</h3>
       <!-- halaman form -->
     <div class="card">
         <div class="card-header bg-success text-white">
@@ -124,7 +127,7 @@
         <div class="form-grup">
             <label>Jenis Kelamin</label>
             <select class="form-control" name="tjk_kelamin">
-                <option value="<?php echo($vjk_kl)?><?php echo($vjk_kl)?></option>
+                <option value="<?php echo($vjk_kl)?>"><?php echo($vjk_kl)?></option>
                 <option value="Laki-Laki">Laki-Laki</option>
                 <option value="Perempuan">Perempuan</option>
             </select>
