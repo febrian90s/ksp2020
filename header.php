@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+<nav class="navbar navbar-expand-lg navbar-light bg-light text-success">
   <div class="container-fluid ">
     <a class="navbar-brand fas fa-globe">KSP</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,15 +15,16 @@
           <a class="nav-link" href="anggota.php">Anggota</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Simpan</a>
+          <a class="nav-link" href="simpan.php">Simpan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pinjam</a>
+          <a class="nav-link" href="pinjam.php">Pinjam</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Logout</a>
+          <a class="nav-link" href="logout.php" onclick="return confirm('anda yakin akan keluar?')">Logout</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<script type="text/javascript" scr="js/bootstrap.min.js"></script>

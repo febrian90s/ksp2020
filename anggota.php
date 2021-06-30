@@ -14,7 +14,7 @@
                                         kota ='$_POST[tkota]',
                                         telepon ='$_POST[ttelepon]',
                                         email ='$_POST[temail]',
-                                        pengurus ='$_POST[tpengurus],'
+                                        pengurus ='$_POST[tpengurus]'
                                         WHERE id_anggota ='$_GET[id]'
                                         ");
 
@@ -134,7 +134,7 @@ include 'header.php';
         </div>
         <div class="form-grup">
             <label>Alamat</label>
-            <textarea name="talamat" class="form-control" placeholder="Inputkan alamat "><?php echo($valt)?>
+            <textarea name="talamat" class="form-control" ><?php echo($valt)?>
             </textarea>
         </div>
         <div class="form-grup">
@@ -154,7 +154,7 @@ include 'header.php';
         <select class="form-control" name="tpengurus" >
                 <option value="<?php echo($vpgrs)?>"><?php echo($vpgrs)?></option>
                 <option value="Iya">Iya</option>
-                <option value="Tidk">Tidak</option>
+                <option value="Tidak">Tidak</option>
             </select>
         </div>
         
@@ -191,6 +191,7 @@ include 'header.php';
                 $tampil= mysqli_query($koneksi, "SELECT*FROM tb_anggota order by id_anggota desc ");
                 while($data=mysqli_fetch_array($tampil)):
             ?>
+            <!-- diisi sesuai nama field pada database -->
             <tr>
                 <td><?php echo $no++;?></td>
                 <td><?php echo$data['nama_anggota']?></td>
